@@ -41,18 +41,18 @@ function myTweets() {
 
             for (i = 0; i < tweets.length; i++) {
                 var tweetText = tweets[i].text;
-                var tweetCreationDate = tweets[i].created_at;
+                var tweetDate = tweets[i].created_at;
 
                 console.log(
                     "----------------------------------------" +
                     "\n @ColinS08565530: " + tweetText +
-                    "\n Post Date: " + tweetCreationDate
+                    "\n Post Date: " + tweetDate
                 );
 
                 fs.appendFile("appFiles/tweets.txt",
                     "----------------------------------------" +
                     "\r\n @ColinS08565530: " + tweetText +
-                    "\r\n Post Date: " + tweetCreationDate +
+                    "\r\n Post Date: " + tweetDate +
                     "\r\n----------------------------------------",
                     function (error) {
                         if (error) {
