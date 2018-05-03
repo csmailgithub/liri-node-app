@@ -5,7 +5,8 @@
   "main": "index.js",
   "dependencies": {
     "inquirer": "^5.2.0",
-    "request": "^2.85.0"
+    "request": "^2.85.0",
+    "twitter": "^1.7.1"
   },
   "devDependencies": {},
   "scripts": {
