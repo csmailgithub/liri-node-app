@@ -10,9 +10,9 @@ var keys = require('./keys.js');
 var spotify = new Spotify(keys.spotify);
 var client = new Twitter(keys.twitter);
 
-var action = process.argv[2];
+var command = process.argv[2];
 // onyl the second time I have attempted to use switch for node cli arguments might be buggy
-switch (action) {
+switch (command) {
     case 'my-tweets':
         myTweets();
         break;
@@ -25,4 +25,8 @@ switch (action) {
     case 'do-what-it-says':
         doWhatItSays();
         break;
+}
+
+function myTweets() {
+
 }
