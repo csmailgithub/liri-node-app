@@ -31,7 +31,7 @@ var movieName = process.argv[3];
 function myTweets() {
 
     var params = {
-        screen_name: '_ColinS',
+        screen_name: 'ColinS08565530',
         count: 20
     }
     console.log("myTweets fxn running")
@@ -45,13 +45,13 @@ function myTweets() {
 
                 console.log(
                     "----------------------------------------" +
-                    "\n @_ColinS: " + tweetText +
+                    "\n @ColinS08565530: " + tweetText +
                     "\n Post Date: " + tweetCreationDate
                 );
 
                 fs.appendFile("appFiles/tweets.txt",
                     "----------------------------------------" +
-                    "\r\n @_ColinS: " + tweetText +
+                    "\r\n @ColinS08565530: " + tweetText +
                     "\r\n Post Date: " + tweetCreationDate +
                     "\r\n----------------------------------------",
                     function (error) {
